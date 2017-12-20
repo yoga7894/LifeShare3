@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@drawable/ic_arrow_downward_black_24dp"
+            android:title="Blood Requests" />
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Request for Blood" />
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Blog" />
+
+        <item
+            android:id="@+id/nav_menu4"
+            android:icon="@mipmap/ic_add_white_24dp"
+            android:title="Upload to Blog" />
+
+        <item
+            android:id="@+id/nav_menu5"
+            android:icon="@mipmap/ic_icon1"
+            android:title="UserProfiles"/>
+
+    </group>
+
+
+
+</menu>

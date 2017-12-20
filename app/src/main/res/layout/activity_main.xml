@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoga.lifeshare.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="35dp"
+            android:id="@+id/imageView"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:src="@drawable/ic_roder"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/rod"
+        android:id="@+id/lay1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName.."
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/uemail" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lay2"
+        android:layout_below="@+id/lay1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/upass"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:text="Login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay2"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text="@string/hi"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/usignup"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_height="20dp" />
+
+
+</RelativeLayout>
